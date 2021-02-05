@@ -88,12 +88,12 @@ title = "1924 D/R Margin\n(in Percent)", id = "district", popup.vars = c("Dem/Re
     "Rep %" = "per_rep_pres_24")) + tm_view(alpha = 0.6, 
 legend.position = c("right", "bottom")) +
     tm_layout(main.title = "Ohio 1924 Presidential\nParty Margin by County", main.title.position = "center", legend.title.size = 0.9, legend.outside = TRUE) +
-    tm_credits(text = "Coolidge won\nOhio by 34.63%\n\nShane DiGiovanna", position = c("left", "bottom"), size = 0.8)
+    tm_credits(text = "\n\nShane DiGiovanna", position = c("left", "bottom"), size = 0.8)
 
 oh_24_margin_map
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![Coolidge won Ohio by 34.63%](README_files/figure-markdown_github/election_1924-1.png)
 
 Republican dominance continued with Herbert Hoovers election in 1928, as shown in this map:
 
@@ -108,7 +108,7 @@ legend.position = c("right", "bottom")) +
 oh_28_margin_map
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![](README_files/figure-markdown_github/unnamed-chunk-3-1.png)
 
 Third Parties
 -------------
@@ -127,7 +127,7 @@ legend.position = c("right", "bottom")) +
 oh_24_prog_map
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-5-1.png)
+![](README_files/figure-markdown_github/unnamed-chunk-4-1.png)
 
 Conclusion
 ----------
