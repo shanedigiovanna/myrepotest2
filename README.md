@@ -117,7 +117,7 @@ oh_28_margin_map
 <p class="caption">
                 Hoover won Ohio by 30.44%</p>
 
-</div>
+
 Third Parties
 -------------
 
@@ -140,7 +140,7 @@ oh_24_prog_map
 <p class="caption">
                 Robert La Follette won an impressive 17.75% in Ohio</p>
 
-</div>
+
 Conclusion
 ----------
 
