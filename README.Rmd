@@ -121,7 +121,6 @@ oh_28_margin_map
 ```
 
 
-
 ## Third Parties
 
 Although Republicans swept the Presidential elections of the Roaring Twenties, third parties played a major role in national politics. These third parties were,
@@ -140,7 +139,6 @@ legend.position = c("right", "bottom")) +
 oh_24_prog_map
 
 ```
-
 
 
 ## Conclusion
