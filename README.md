@@ -93,23 +93,31 @@ legend.position = c("right", "bottom")) +
 oh_24_margin_map
 ```
 
-![Coolidge won Ohio by 34.63%](README_files/figure-markdown_github/election_1924-1.png)
+<div class="figure" style="text-align: center">
+<img src="README_files/figure-markdown_github/election24-1.png" alt="                Coolidge won Ohio by 34.63%"  />
+<p class="caption">
+                Coolidge won Ohio by 34.63%</p>
 
-Republican dominance continued with Herbert Hoovers election in 1928, as shown in this map:
+</div>
+Republican dominance continued with Herbert Hoover's election in 1928, as shown in this map:
 
 ``` r
 oh_28_margin_map <- tm_shape(twenties_elect) + tm_polygons("d_r_pres_margin_28", palette = "RdBu", breaks = seq(-50, 50, by = 10),
 title = "1928 D/R Margin\n(in Percent)", id = "district", popup.vars = c("Dem/Rep Pres Margin" = "d_r_pres_margin_28", "Dem %" = "per_dem_pres_28", 
     "Rep %" = "per_rep_pres_28")) + tm_view(alpha = 0.6, 
 legend.position = c("right", "bottom")) +
-    tm_layout(main.title = "Ohio 1928 Presidential Party Margin by County", main.title.position = "center", legend.title.size = 0.9, legend.outside = TRUE) +
-    tm_credits(text = "Hoover won\nOhio by 30.44%\n\nShane DiGiovanna", position = c("left", "bottom"), size = 0.8)
+    tm_layout(main.title = "Ohio 1928 Presidential\nParty Margin by County", main.title.position = "center", legend.title.size = 0.9, legend.outside = TRUE) +
+    tm_credits(text = "\n\nShane DiGiovanna", position = c("left", "bottom"), size = 0.8)
 
 oh_28_margin_map
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-3-1.png)
+<div class="figure" style="text-align: center">
+<img src="README_files/figure-markdown_github/election28-1.png" alt="                Hoover won Ohio by 30.44%"  />
+<p class="caption">
+                Hoover won Ohio by 30.44%</p>
 
+</div>
 Third Parties
 -------------
 
@@ -122,13 +130,17 @@ oh_24_prog_map <- tm_shape(twenties_elect) + tm_polygons("per_prog_pres_24", pal
 title = "        Progressive\n  Vote Share\n(in Percent)", id = "district", popup.vars = c("Progressive %" = "per_prog_pres_24")) + tm_view(alpha = 0.6, 
 legend.position = c("right", "bottom")) +
     tm_layout(main.title = "Ohio Robert La Follette Vote Share in\n1924 Presidential Election", main.title.position = "center", legend.title.size = 0.9, legend.outside = TRUE) +
-    tm_credits(text = "Progressive\nVote: 17.75%\n\nShane DiGiovanna", position = c("left", "bottom"), size = 0.8)
+    tm_credits(text = "\n\nShane DiGiovanna", position = c("left", "bottom"), size = 0.8)
 
 oh_24_prog_map
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-4-1.png)
+<div class="figure" style="text-align: center">
+<img src="README_files/figure-markdown_github/prog-1.png" alt="                Robert La Follette won an impressive 17.75% in Ohio"  />
+<p class="caption">
+                Robert La Follette won an impressive 17.75% in Ohio</p>
 
+</div>
 Conclusion
 ----------
 

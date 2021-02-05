@@ -4,7 +4,7 @@ author: "Shane DiGiovanna"
 date: "January 30, 2021"
 output: 
   github_document:
-    html_preview: false
+    html_preview: true
 ---
 
 ```{r setup, include=FALSE}
@@ -92,8 +92,9 @@ margin_shift_24_28 = d_r_pres_margin_28 - d_r_pres_margin_24
 
 Now that we have processed and merged our data, we can map it! 
 
+
 First up is the 1924 election that returned Calvin Coolidge to the White House:
-```{r election_1924, fig.cap="Coolidge won Ohio by 34.63%", dpi = 300}
+```{r election24, fig.align="center", fig.cap="                Coolidge won Ohio by 34.63%"}
 oh_24_margin_map <- tm_shape(twenties_elect) + tm_polygons("d_r_pres_margin_24", palette = "RdBu", breaks = seq(-50, 50, by = 10),
 title = "1924 D/R Margin\n(in Percent)", id = "district", popup.vars = c("Dem/Rep Pres Margin" = "d_r_pres_margin_24", "Dem %" = "per_dem_pres_24", 
     "Rep %" = "per_rep_pres_24")) + tm_view(alpha = 0.6, 
@@ -104,17 +105,22 @@ legend.position = c("right", "bottom")) +
 oh_24_margin_map
 ```
 
-Republican dominance continued with Herbert Hoovers election in 1928, as shown in this map:
-```{r}
+
+
+
+Republican dominance continued with Herbert Hoover's election in 1928, as shown in this map:
+```{r election28, fig.cap="                Hoover won Ohio by 30.44%", fig.align="center"}
 oh_28_margin_map <- tm_shape(twenties_elect) + tm_polygons("d_r_pres_margin_28", palette = "RdBu", breaks = seq(-50, 50, by = 10),
 title = "1928 D/R Margin\n(in Percent)", id = "district", popup.vars = c("Dem/Rep Pres Margin" = "d_r_pres_margin_28", "Dem %" = "per_dem_pres_28", 
     "Rep %" = "per_rep_pres_28")) + tm_view(alpha = 0.6, 
 legend.position = c("right", "bottom")) +
-    tm_layout(main.title = "Ohio 1928 Presidential Party Margin by County", main.title.position = "center", legend.title.size = 0.9, legend.outside = TRUE) +
-    tm_credits(text = "Hoover won\nOhio by 30.44%\n\nShane DiGiovanna", position = c("left", "bottom"), size = 0.8)
+    tm_layout(main.title = "Ohio 1928 Presidential\nParty Margin by County", main.title.position = "center", legend.title.size = 0.9, legend.outside = TRUE) +
+    tm_credits(text = "\n\nShane DiGiovanna", position = c("left", "bottom"), size = 0.8)
 
 oh_28_margin_map
 ```
+
+
 
 ## Third Parties
 
@@ -124,16 +130,18 @@ in many ways, a symptom of the socioeconomic divide that grew over the decade, f
 In 1924, dissatisfied with the conservatism of both major parties, renowned Progressive Robert La Follette launched a major campaign that won his home state of Wisconsin.
 La Follette performed well in Ohio, getting 17.75%. He did especially well in industrial counties like Cuyahoga.
 
-```{r}
+```{r prog, fig.cap="                Robert La Follette won an impressive 17.75% in Ohio", fig.align="center"}
 oh_24_prog_map <- tm_shape(twenties_elect) + tm_polygons("per_prog_pres_24", palette = "Greens", breaks = seq(0, 25, by = 2.5),
 title = "        Progressive\n  Vote Share\n(in Percent)", id = "district", popup.vars = c("Progressive %" = "per_prog_pres_24")) + tm_view(alpha = 0.6, 
 legend.position = c("right", "bottom")) +
     tm_layout(main.title = "Ohio Robert La Follette Vote Share in\n1924 Presidential Election", main.title.position = "center", legend.title.size = 0.9, legend.outside = TRUE) +
-    tm_credits(text = "Progressive\nVote: 17.75%\n\nShane DiGiovanna", position = c("left", "bottom"), size = 0.8)
+    tm_credits(text = "\n\nShane DiGiovanna", position = c("left", "bottom"), size = 0.8)
 
 oh_24_prog_map
 
 ```
+
+
 
 ## Conclusion
 
